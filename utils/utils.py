@@ -7,7 +7,5 @@ def feature_by_type(data):
     data_type = data.dtypes == i
     data_type = [feature for feature in data_type.index if data_type[feature]]
     feature_by_type_res[str(i)] = data_type
-  print('Feature by type')
-  print('**********************')
-  print(count_values)
-  return feature_by_type_res
+
+  return feature_by_type_res, count_values

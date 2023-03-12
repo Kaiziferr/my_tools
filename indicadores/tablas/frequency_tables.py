@@ -1,4 +1,4 @@
-def _number_intervals(data, feature, **kward):
+def __number_intervals(data, feature, **kward):
   """Calcula el número de intervalos variables continuas"""
   n_size = 126
   iqr = data[feature].quantile(0.75) - data[feature].quantile(0.25)
